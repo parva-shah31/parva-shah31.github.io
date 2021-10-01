@@ -7,3 +7,6 @@ MAIN
     CONTACT US
 
 footer
+
+
+add image on line 157
