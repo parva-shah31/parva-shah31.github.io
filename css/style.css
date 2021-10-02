@@ -575,6 +575,12 @@ img {
     height: auto;
     padding-bottom: var(--mb-0-75);
     margin: auto;
+    margin-bottom: var(--mb-2);
+}
+
+.skills__container-card:hover {
+    transform: scale(1.1);
+    transition: .3s;
 }
 
 .card_skill{
@@ -621,18 +627,20 @@ img {
 
 .imgBx {
     position: absolute;
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: 90%;
     transition: 0.5s;
-    transform: translate(5% , -20%);
+    transform: translate(-15% , -5%);
     object-fit: fill;
 }
 
-.card_skill:hover .imgBx {
+
+/* To move card as well */
+/* .card_skill:hover .imgBx {
     width: 90%;
     height: 90%;
     transform: translate(-15%, -10%);
-}
+} */
 
 .contentBx {
     display: flex;
@@ -652,7 +660,7 @@ img {
     position: relative;
     object-fit: cover;
     text-align: center;
-    transform: translate(-40% , 92%);
+    transform: translate(-42% , 92%);
     transition: 1.5s;
 }
 
@@ -674,4 +682,8 @@ img {
     0 100px 80px rgba(0, 0, 0, 0.12)
   ;;
     
+}
+
+.contentBx-Js {
+    font-size: var(--h3-font-size);
 }
