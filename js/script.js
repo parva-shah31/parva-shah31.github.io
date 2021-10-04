@@ -88,3 +88,33 @@ new Typewriter('#typewriter', {
 });
 
 console.log("TypeWriter Effect");
+
+
+// ===================== Portfolio Swiper Effect ======================
+
+
+var swiper = new Swiper('.blog-slider', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    keyboard: true,
+    mousewheel: {
+      invert: false,
+    },
+    navigation: {
+        nextEl : ".swiper-button-next",
+        prevE1 : ".swiper-button-prev",
+    },
+    // autoHeight: true,
+    pagination: {
+      el: '.blog-slider__pagination',
+      clickable: true,
+    },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+  });
+  console.log("Portfolio Swiper Working!");
+
+
