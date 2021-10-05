@@ -118,3 +118,18 @@ var swiper = new Swiper('.blog-slider', {
   console.log("Portfolio Swiper Working!");
 
 
+// ================= Scroll Up jS ===================
+
+function scrollUp(){
+    const scrollup  = document.getElementById('scroll-up');
+    //scroll higher than 560 Viewpoints/heights 
+    if(this.scrollY >= 560){
+        scrollup.classList.add('show-scroll');
+    }
+    else {
+        scrollup.classList.remove('show-scroll');
+    }
+    console.log("Scroll up being called and working");
+}
+
+window.addEventListener('scroll',scrollUp)
