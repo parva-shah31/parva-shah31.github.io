@@ -1092,7 +1092,7 @@ img {
   /* ================CONTACT SECTION =============== */
 
 .contact_mail {
-    margin-left: var(--mb-3);
+    margin-left: var(--mb-1);
     margin-right: var(--mb-1-5);
     width: 90%;
 
@@ -1337,3 +1337,79 @@ form textarea {
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--text-color-light);
 }
+
+
+/* ============== Screen Size Styling  - SMALL ================ */
+
+/* SMALL SCREEN */
+@media screen and(max-width :350px) {
+    .container{
+        margin-left: var(--mb-0-25);
+        margin-right: var(--mb-1);
+    }
+
+    .nav__menu{
+        padding: 2rem 0.25rem 4rem;
+    }
+
+    .nav__list{
+        column-gap: 0;
+    }
+
+    .home__content{
+        grid-template-columns: .25fr 3fr;
+    }
+
+    .home__scroll{
+        margin-top: var(--mb-0-25)
+    }
+
+    .home__scroll-mouse {
+        margin-top: var(--mb-0-25);
+    }
+
+    .about{
+        margin-top: var(--mb-3);
+    }
+
+    .qualification__data{
+        gap: 0.5rem;
+    }
+
+    ::-webkit-scrollbar{
+        width: 0.4rem;
+        border-radius: 0.4rem;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: var(--scroll-thumb-color);
+        border-radius: 0.2rem;
+    }
+
+}
+
+/* Medium SCREEN */
+@media screen and(max-width :568px) {
+    
+}
+
+/*  Large SCREEN */
+@media screen and(min-width : 768px) {
+    
+}
+
+
+/* Larger screen size */
+@media screen and(max-width : 1024px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
