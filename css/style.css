@@ -1433,13 +1433,6 @@ form textarea {
         transform: translateY(60%);
     }
 
-    @media screen and(max-width : 768px) and (min-width: 586px) {
-        .qualification__start-icon{
-            position: absolute;
-            transform: translateY(-20%);
-        }
-    }
-
 
     .contact{
         padding-top: 0;
