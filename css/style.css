@@ -168,7 +168,7 @@ img {
 .section {
     /* padding: 2rem 0 4rem; */
     margin: auto;
-    min-height: 80vh;
+    min-height: 60vh;
 }
 
 .section__title {
@@ -359,7 +359,7 @@ img {
 /* ============ HOME =============== */
 
 .home{
-    height: 70vh;
+    height: 40vh;
     align-content: space-between;
     margin-top: var(--mb-3);
     padding-bottom: 0;
@@ -1394,7 +1394,57 @@ form textarea {
 
 /* Medium SCREEN */
 @media screen and(max-width :568px) {
-    
+    .home__content{
+        grid-template-columns: max-content 1fr;
+    }
+
+    .section {
+        min-height: 60vh;
+    }
+
+    .home__data{
+        grid-column: initial;
+    }
+
+    .about__container ,
+    .skills__container,
+    .portfolio__container,
+    .contact__container,
+    .footer__container{
+        grid-template-columns: repeat(1 , 1fr);
+        padding-left: var(--mb-1);
+        padding-right: var(--mb-1);
+    }
+
+    /* .qualification__section {
+        display: grid;
+        grid-template-columns: 0.85fr;
+        justify-content: center;
+    } */
+
+
+
+    .portfolio{
+        padding-bottom: var(--mb-0-25);
+    }
+
+    .qualification__start-icon{
+        position: absolute;
+        transform: translateY(60%);
+    }
+
+    @media screen and(max-width : 768px) and (min-width: 586px) {
+        .qualification__start-icon{
+            position: absolute;
+            transform: translateY(-20%);
+        }
+    }
+
+
+    .contact{
+        padding-top: 0;
+    }
+
 }
 
 /*  Large SCREEN */
