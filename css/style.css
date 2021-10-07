@@ -168,7 +168,7 @@ img {
 .section {
     /* padding: 2rem 0 4rem; */
     margin: auto;
-    min-height: 60vh;
+    min-height: 80vh;
 }
 
 .section__title {
@@ -230,7 +230,7 @@ img {
 /*  =============== LAYOUT ================== */
 
 .container {
-    margin-right: var(--mb-1);
+    margin-right: auto;
 }
 
 .grid {
@@ -362,7 +362,7 @@ img {
     height: 40vh;
     align-content: space-between;
     margin-top: var(--mb-3);
-    padding-bottom: 0;
+    padding-bottom: 2rem;
 }
 
 .home__container {
@@ -376,7 +376,7 @@ img {
 
 .home__content {
     display: grid;
-    grid-template-columns: .08fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 'home__social home__content';
     padding-top: var(--mb-2-5);
     align-items: center;
@@ -409,9 +409,11 @@ img {
 
 .home__data {
     grid-area: home__content;
+    width: 600px;
+    display: block;
     align-content: center;
     text-align: center;
-
+    transform: translateX(85px);
 }
 
 .home__welcome {
@@ -486,7 +488,7 @@ img {
 .home__scroll {
     display: flex;
     justify-content: center;
-    margin-top: var(--mb-1);
+    margin-top: 0;
     animation: scrollDown 3s infinite
 }
 
@@ -520,6 +522,7 @@ img {
 /* ================================== About ======================================  */
 .about{
     padding-top: 1rem;
+    margin-top: 7rem;
 }
 .about__img{
     width: 200ps;
@@ -1342,7 +1345,7 @@ form textarea {
 /* ============== Screen Size Styling  - SMALL ================ */
 
 /* SMALL SCREEN */
-@media screen and(max-width :350px) {
+@media screen and (max-width :350px) {
     .container{
         margin-left: var(--mb-0-25);
         margin-right: var(--mb-1);
@@ -1393,13 +1396,25 @@ form textarea {
 }
 
 /* Medium SCREEN */
-@media screen and(max-width :568px) {
+@media screen and (max-width :568px) {
     .home__content{
         grid-template-columns: max-content 1fr;
     }
 
+    .home__scroll{
+        margin-top: var(--mb-0-25)
+    }
+
+    .home__scroll-mouse {
+        margin-top: var(--mb-0-25);
+    }
+
+    .about{
+        margin-top: 6rem;
+    }
+
     .section {
-        min-height: 60vh;
+        min-height: 80vh;
     }
 
     .home__data{
@@ -1441,13 +1456,151 @@ form textarea {
 }
 
 /*  Large SCREEN */
-@media screen and(min-width : 768px) {
-    
+@media screen and (min-width : 768px) {
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding: 6rem 0 2rem;
+    }
+
+    .section__subtitle{
+        margin-bottom: 4rem;
+    }
+
+    .header{
+        top: 0;
+        bottom: initial;
+    }
+
+
+    .header,
+    .main,
+    .footer {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        height: calc(var(--header-height)+ 1.5rem);
+    }
+
+    .nav__icon,
+    .nav__close,
+    .nav__toggle{
+        display: none;
+    }
+
+    .nav__list{
+        display: flex;
+        column-gap: 2rem;
+    }
+
+    .nav__menu{
+        margin-left: auto;
+    }
+
+    .change-theme{
+        margin: 0;
+        /* padding: 0; */
+    }
+
+    .home__container{
+        row-gap: 5rem;
+    }
+
+    .home__content{
+        padding-top: 2.5rem;
+        column-gap: 2rem;
+    }
+
+    .home__scroll-button{
+        margin-right: 3rem;
+    }
+
+    .about__container{
+        column-gap: 5rem;
+    }
+
+    .about__img{
+        width: 350px;
+    }
+
+    .about__description{
+        text-align: initial;
+    }
+
+
+
+    .about {
+        margin-top: 4rem;
+    }
+    .about__info{
+        justify-content:space-evenly;
+    }
+
+
+    .about__buttons{
+        justify-content: initial;
+    }
+
+    .qualification__button {
+        margin: 0  var(--mb-1);
+    }
+
+    .footer{
+        grid-template-columns: repeat(3 , 1fr);
+    }
+
+    .footer__bg{
+        padding: 3rem 0 3.5rem;
+    }
+
+    .footer__links{
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+
+    .footer__socials{
+        justify-content: flex-end;
+    }
+
+    .footer__copy{
+        margin-top: 4.5rem ;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
 /* Larger screen size */
-@media screen and(max-width : 1024px) {
+@media screen and (max-width : 1024px) {
     
 }
 
