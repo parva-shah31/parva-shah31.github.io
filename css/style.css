@@ -413,7 +413,6 @@ img {
     display: block;
     align-content: center;
     text-align: center;
-    transform: translateX(85px);
 }
 
 .home__welcome {
@@ -1136,7 +1135,7 @@ img {
 }
 
 form {
-    max-width: 600px;
+    max-width: 700px;
     text-align: center;
     margin: 20px auto;
 }
@@ -1493,7 +1492,7 @@ form textarea {
     .nav__icon,
     .nav__close,
     .nav__toggle{
-        display: none;
+        display:none;
     }
 
     .nav__list{
@@ -1546,7 +1545,7 @@ form textarea {
 
 
     .about__buttons{
-        justify-content: initial;
+        justify-content: center;
     }
 
     .qualification__button {
@@ -1574,34 +1573,60 @@ form textarea {
         margin-top: 4.5rem ;
     }
 
+    .nav__btns{
+        justify-content: right;
+        margin-left: 14px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /* .home__data {
+        transform: translateX(85px);
+    } */
 
 }
 
 
 /* Larger screen size */
-@media screen and (max-width : 1024px) {
+@media screen and (max-width :1024px) {
     
+    .header,
+    .main,
+    .footer__container{
+        padding: 0;
+    }
+
+    #home{
+        height: 85vh;
+    }
+
+    .home__social{
+        transform: translateX(-4rem);
+    }
+
+    .contact-form {
+        width: 460px;
+    }
+
+    .contact__inputs {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .home__data {
+        transform: translateX(-10px)
+    }
+
+    .contact__cointainer {
+        padding-left: var(--mb-3);
+        padding-top: 2rem;
+        row-gap: 2rem;
+    }
+
+    .contact__information{
+        transform: translateY(60px);
+    }
+
+    .form{
+        min-width: 700px;
+    }
+
 }
 
 
