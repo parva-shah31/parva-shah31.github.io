@@ -395,6 +395,7 @@ img {
     column-gap: 0;
     padding-top: 2rem;
     margin: 0;
+    align-items: flex-start;
 }
 
 .home__social-icon {
@@ -1593,6 +1594,7 @@ form textarea {
     .footer__container{
         padding: 0;
     }
+    
 
     #home{
         height: 85vh;
