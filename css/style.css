@@ -181,6 +181,7 @@ img {
     display: block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
+    color: var(--text-color);
 }
 
 .section__title , .section__subtitle {
@@ -240,13 +241,13 @@ img {
 .header{
     width: 100%;
     position: fixed;
+    height: 40px;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
-    margin-right: var(--mb-0-25);
-
+    margin-right: var(--mb-0-25);    
 }
 
 
@@ -534,6 +535,7 @@ img {
 .about__description{
     text-align: center;
     margin-bottom: var(--mb-2-5);
+    color: var(--text-color);
 }
 
 .about__info {
@@ -552,6 +554,7 @@ img {
 .about__info-name{
     font-size: var(--smaller-font-size);
     font-family: var(--roboto-font);
+    color: var(--text-color-light);
 }
 
 .about__info-name,
@@ -1508,6 +1511,7 @@ form textarea {
 
     .nav__menu{
         margin-left: auto;
+        margin-top: 10px;
     }
 
     .change-theme{
