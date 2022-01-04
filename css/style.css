@@ -1101,7 +1101,7 @@ img {
 
 }
 
-.contact__cointainer{
+.contact__container{
     row-gap: 2rem;
     width: auto;
 }
@@ -1136,7 +1136,7 @@ img {
 }
 
 form {
-    max-width: 700px;
+    max-width: 800px;
     text-align: center;
     margin: 20px auto;
 }
@@ -1253,6 +1253,7 @@ form textarea {
 
 .footer__links {
     display: flex;
+    margin-right: 0%;
     align-items: center;
     flex-direction: column;
     row-gap: 1.5rem;
@@ -1345,7 +1346,7 @@ form textarea {
 /* ============== Screen Size Styling  - SMALL ================ */
 
 /* SMALL SCREEN */
-@media screen and (max-width :350px) {
+@media screen and (max-width :380px) {
     .container{
         margin-left: var(--mb-0-25);
         margin-right: var(--mb-1);
@@ -1357,6 +1358,9 @@ form textarea {
 
     .nav__list{
         column-gap: 0;
+    }
+    .home__data{
+        margin-right: 40px;
     }
 
     .home__content{
@@ -1419,6 +1423,7 @@ form textarea {
 
     .home__data{
         grid-column: initial;
+        margin-right: 30px;
     }
 
     .about__container ,
@@ -1614,8 +1619,10 @@ form textarea {
     .home__data {
         transform: translateX(-10px)
     }
-
-    .contact__cointainer {
+    .footer__socials{
+        justify-content: flex-end;
+    }
+    .contact__container {
         padding-left: var(--mb-3);
         padding-top: 2rem;
         row-gap: 2rem;
@@ -1635,11 +1642,31 @@ form textarea {
     font-size: 12px;
 }
 
-
-
-
-
-
-
-
-
+/* Largest Screen Size */
+@media screen and (min-width : 1024px ) {
+    .header,
+    .main,
+    .footer__container{
+        padding: 0;
+    }
+    #home{
+        height: 85vh;
+    }
+    .home__social{
+        transform: translateX(-1rem);
+    }
+    .contact-form{
+        width: 460px;
+    }
+    .contact__inputs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact__container{
+        padding-left: var(--mb-3);
+        padding-top: var(--mb-3);
+        row-gap: 3rem;
+    }
+    .form{
+        min-width: 700px;
+    }
+}
